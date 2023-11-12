@@ -16,7 +16,7 @@ export const registerInputDown = (event: MouseEvent | TouchEvent, control: strin
 		id = 'mouse'; // For mouse events, use a constant identifier
 	}
 
-	controls.map[control as ValidInput] = true;
+	controls.setActive(control as ValidInput, true);
 
 	activeEvents.push({ id, control });
 };
@@ -34,7 +34,7 @@ export const handleInputUp = (event: MouseEvent | TouchEvent) => {
 	if (index > -1) {
 		const { control } = activeEvents[index];
 
-		controls.map[control as ValidInput] = false;
+		controls.setActive(control as ValidInput, false);
 
 		activeEvents.splice(index, 1);
 	}

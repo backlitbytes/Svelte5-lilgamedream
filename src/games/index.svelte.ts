@@ -100,17 +100,17 @@ export function switchScene(newSceneKey: SceneName) {
 let square: Phaser.GameObjects.Rectangle;
 
 function controlSquare() {
-	const speed = controls.map.b ? SPEED / 2 : controls.map.a ? SPEED * 2 : SPEED;
+	const speed = controls.active('b') ? SPEED / 2 : controls.active('a') ? SPEED * 2 : SPEED;
 
-	if (controls.map.ArrowLeft) {
+	if (controls.active('ArrowLeft')) {
 		square.x -= speed;
-	} else if (controls.map.ArrowRight) {
+	} else if (controls.active('ArrowRight')) {
 		square.x += speed;
 	}
 
-	if (controls.map.ArrowUp) {
+	if (controls.active('ArrowUp')) {
 		square.y -= speed;
-	} else if (controls.map.ArrowDown) {
+	} else if (controls.active('ArrowDown')) {
 		square.y += speed;
 	}
 }

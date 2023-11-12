@@ -7,9 +7,9 @@
 
 <button
 	class="disable-select"
-	class:active={controls.map[control]}
-	on:touchstart={(event) => registerInputDown(event, control)}
-	on:mousedown={(event) => registerInputDown(event, control)}><slot /></button
+	class:active={controls.active(control)}
+	ontouchstart={(event) => registerInputDown(event, control)}
+	onmousedown={(event) => registerInputDown(event, control)}><slot /></button
 >
 
 <style>

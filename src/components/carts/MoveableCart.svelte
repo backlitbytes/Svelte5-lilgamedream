@@ -12,9 +12,9 @@
 		leftPerc: number;
 	}>();
 
-	let selected = false;
-	let placed = false;
-	let sceneLoaded = false;
+	let selected = $state(false);
+	let placed = $state(false);
+	let sceneLoaded = $state(false);
 
 	let animationID: any = 0; // TODO: these id types...
 	let sceneSwapID: any = 0;

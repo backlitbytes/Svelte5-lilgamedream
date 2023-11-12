@@ -10,19 +10,35 @@ export interface CartData {
 	unlocked: boolean;
 }
 
+class Cart {
+	hue = $state(0);
+	sat = $state(0);
+	selected = $state(false);
+	unlocked = $state(false);
+	scene: SceneName;
+
+	constructor(args: CartData) {
+		this.hue = args.hue;
+		this.sat = args.sat;
+		this.selected = args.selected;
+		this.unlocked = args.unlocked;
+		this.scene = args.scene;
+	}
+}
+
 class CartColletion {
 	all = $state<Array<CartData>>([
-		{ hue: 0, sat: 100, scene: 'Red', selected: false, unlocked: true },
-		{ hue: 30, sat: 100, scene: 'Orange', selected: false, unlocked: false },
-		{ hue: 60, sat: 100, scene: 'Yellow', selected: false, unlocked: false },
-		{ hue: 120, sat: 100, scene: 'Green', selected: false, unlocked: false },
-		{ hue: 240, sat: 60, scene: 'Blue', selected: false, unlocked: false },
-		{ hue: 270, sat: 100, scene: 'Purple', selected: false, unlocked: false },
-		{ hue: 0, sat: 0, scene: 'Black', selected: false, unlocked: false },
-		{ hue: 0, sat: 0, scene: 'White', selected: false, unlocked: false },
-		{ hue: 0, sat: 100, scene: 'RainbowForrest', selected: false, unlocked: false },
-		{ hue: 0, sat: 100, scene: 'RainbowVillage', selected: false, unlocked: false },
-		{ hue: 0, sat: 100, scene: 'RainbowOcean', selected: false, unlocked: false }
+		new Cart({ hue: 0, sat: 100, scene: 'Red', selected: false, unlocked: true }),
+		new Cart({ hue: 30, sat: 100, scene: 'Orange', selected: false, unlocked: false }),
+		new Cart({ hue: 60, sat: 100, scene: 'Yellow', selected: false, unlocked: false }),
+		new Cart({ hue: 120, sat: 100, scene: 'Green', selected: false, unlocked: false }),
+		new Cart({ hue: 240, sat: 60, scene: 'Blue', selected: false, unlocked: false }),
+		new Cart({ hue: 270, sat: 100, scene: 'Purple', selected: false, unlocked: false }),
+		new Cart({ hue: 0, sat: 0, scene: 'Black', selected: false, unlocked: false }),
+		new Cart({ hue: 0, sat: 0, scene: 'White', selected: false, unlocked: false }),
+		new Cart({ hue: 0, sat: 100, scene: 'RainbowForrest', selected: false, unlocked: false }),
+		new Cart({ hue: 0, sat: 100, scene: 'RainbowVillage', selected: false, unlocked: false }),
+		new Cart({ hue: 0, sat: 100, scene: 'RainbowOcean', selected: false, unlocked: false })
 	]);
 
 	unlockCart = (name: SceneName) => {

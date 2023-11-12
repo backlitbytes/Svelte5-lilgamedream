@@ -14,27 +14,27 @@
 		<div class="center" />
 		<button
 			class="up"
-			class:active={controls.map.ArrowUp}
-			on:touchstart={(event) => registerInputDown(event, 'ArrowUp')}
-			on:mousedown={(event) => registerInputDown(event, 'ArrowUp')}
+			class:active={controls.active('ArrowUp')}
+			ontouchstart={(event) => registerInputDown(event, 'ArrowUp')}
+			onmousedown={(event) => registerInputDown(event, 'ArrowUp')}
 		/>
 		<button
 			class="right"
-			class:active={controls.map.ArrowRight}
-			on:touchstart={(event) => registerInputDown(event, 'ArrowRight')}
-			on:mousedown={(event) => registerInputDown(event, 'ArrowRight')}
+			class:active={controls.active('ArrowRight')}
+			ontouchstart={(event) => registerInputDown(event, 'ArrowRight')}
+			onmousedown={(event) => registerInputDown(event, 'ArrowRight')}
 		/>
 		<button
 			class="down"
-			class:active={controls.map.ArrowDown}
-			on:touchstart={(event) => registerInputDown(event, 'ArrowDown')}
-			on:mousedown={(event) => registerInputDown(event, 'ArrowDown')}
+			class:active={controls.active('ArrowDown')}
+			ontouchstart={(event) => registerInputDown(event, 'ArrowDown')}
+			onmousedown={(event) => registerInputDown(event, 'ArrowDown')}
 		/>
 		<button
 			class="left"
-			class:active={controls.map.ArrowLeft}
-			on:touchstart={(event) => registerInputDown(event, 'ArrowLeft')}
-			on:mousedown={(event) => registerInputDown(event, 'ArrowLeft')}
+			class:active={controls.active('ArrowLeft')}
+			ontouchstart={(event) => registerInputDown(event, 'ArrowLeft')}
+			onmousedown={(event) => registerInputDown(event, 'ArrowLeft')}
 		/>
 	</div>
 </div>

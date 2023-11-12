@@ -7,9 +7,9 @@
 
 <div class="center">
 	<button
-		class:active={controls.map[control]}
-		on:touchstart={(event) => registerInputDown(event, control)}
-		on:mousedown={(event) => registerInputDown(event, control)}
+		class:active={controls.active(control)}
+		ontouchstart={(event) => registerInputDown(event, control)}
+		onmousedown={(event) => registerInputDown(event, control)}
 	/>
 	<div class="word">
 		<slot />
