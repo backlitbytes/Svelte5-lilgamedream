@@ -2,7 +2,7 @@
 	import { registerInputDown } from '../../stores/click-touch-input-handling.svelte';
 	import { controls, type ValidInput } from '../../stores/controls.svelte';
 
-	const { control = 'None' } = $props<{ control: ValidInput }>();
+	const { control } = $props<{ control: ValidInput }>();
 </script>
 
 <button
