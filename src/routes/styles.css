@@ -1,0 +1,26 @@
+:root {
+	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+	min-height: 100dvh;
+	margin: 0;
+	background-attachment: fixed;
+	touch-action: manipulation; /** prevent double tap zoom */
+	transition: background ease-in-out 1s;
+	-webkit-overflow-scrolling: touch;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+.disable-select {
+	user-select: none;
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE/Edge */
+
+	-webkit-touch-callout: none;
+}
