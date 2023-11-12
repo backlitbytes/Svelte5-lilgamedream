@@ -2,7 +2,7 @@
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import MoveableCart from './MoveableCart.svelte';
-	import { carts } from '../../stores/carts';
+	import { carts } from '../../stores/carts.svelte';
 
 	let mounted = false;
 	onMount(() => {

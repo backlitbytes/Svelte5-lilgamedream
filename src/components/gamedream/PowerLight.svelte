@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { gamedream } from '../../stores/gamedream';
+	import { gamedream } from '../../stores/gamedream.svelte';
 </script>
 
 <div class="wrapper">

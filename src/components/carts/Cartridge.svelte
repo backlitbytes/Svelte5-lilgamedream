@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import BrandText from '../BrandText.svelte';
 	import CartDetail from './CartDetail.svelte';
-	import type { CartData } from '../../stores/carts';
+	import type { CartData } from '../../stores/carts.svelte';
 
 	const { cartData, onClick } = $props<{ cartData: CartData; onClick: any }>();
 
@@ -19,7 +19,7 @@
 </script>
 
 <div class="outer" bind:this={cartRef}>
-	<button class="cartridge" on:click={onClick}>
+	<button class="cartridge" onclick={onClick}>
 		<div class="hat" />
 		<div class="left-deet">
 			<CartDetail isLeft={true} />

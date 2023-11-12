@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { registerInputDown } from '../../stores/click-touch-input-handling';
-	import { controls } from '../../stores/controls';
+	import { registerInputDown } from '../../stores/click-touch-input-handling.svelte';
+	import { controls } from '../../stores/controls.svelte';
 </script>
 
 <div class="dpad-wrapper disable-select">

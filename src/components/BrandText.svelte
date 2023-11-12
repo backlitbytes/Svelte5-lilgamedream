@@ -9,7 +9,7 @@
 <div class="wrapper disable-select">
 	<span class="grey"><span>lil</span><span>game</span></span>
 	<span class="colorful">
-		{#each text as letter, index (index)}
+		{#each text as letter, index}
 			<span class="silly" style:color={funColors[index % 5]}>{letter}</span>
 		{/each}
 	</span>

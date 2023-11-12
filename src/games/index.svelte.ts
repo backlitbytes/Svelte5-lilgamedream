@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
-import { controls, type ControlState } from '../stores/controls';
-import { carts } from '../stores/carts';
+import { controls, type ControlState } from '../stores/controls.svelte';
+import { carts } from '../stores/carts.svelte';
 
 export const colorHex = {
 	red: '#FF0000',

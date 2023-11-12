@@ -28,5 +28,9 @@
 		"vite": "^4.0.0",
 		"vitest": "^0.25.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@vercel/analytics": "^1.1.1",
+		"phaser": "^3.70.0"
+	}
 }

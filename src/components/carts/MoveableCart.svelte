@@ -2,8 +2,8 @@
 	import { onMount } from 'svelte';
 	import Cartridge from './Cartridge.svelte';
 	import { startSound } from '../../audio/sounds';
-	import { carts, type CartData } from '../../stores/carts';
-	import { gamedream, gamedreamElemRef } from '../../stores/gamedream';
+	import { carts, type CartData } from '../../stores/carts.svelte';
+	import { gamedream, gamedreamElemRef } from '../../stores/gamedream.svelte';
 	import type { SceneName } from '../../games/index.svelte';
 
 	const { cart, topPerc, leftPerc } = $props<{

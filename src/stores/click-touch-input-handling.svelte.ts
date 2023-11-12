@@ -1,4 +1,4 @@
-import { controls, type ValidInput } from './controls';
+import { controls, type ValidInput } from './controls.svelte';
 
 type InputEvent = {
 	id: number | string;

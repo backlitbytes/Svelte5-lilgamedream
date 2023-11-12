@@ -1,10 +1,10 @@
 <script lang="ts">
 	import AllCarts from '../components/carts/AllCarts.svelte';
-	import { handleInputUp } from '../stores/click-touch-input-handling';
+	import { handleInputUp } from '../stores/click-touch-input-handling.svelte';
 	import { onMount } from 'svelte';
 	import { loadAudio } from '../audio/sounds';
 	import Gamedream from '../components/gamedream/Gamedream.svelte';
-	import { gamedream } from '../stores/gamedream';
+	import { gamedream } from '../stores/gamedream.svelte';
 	import { chickenDinner } from '../stores/winner.svelte';
 
 	onMount(() => {

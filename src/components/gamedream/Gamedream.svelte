@@ -4,7 +4,7 @@
 	import DPad from './DPad.svelte';
 	import PowerLight from './PowerLight.svelte';
 	import StartButton from './StartButton.svelte';
-	import { assignGamedreamRef, gamedream } from '../../stores/gamedream';
+	import { assignGamedreamRef, gamedream } from '../../stores/gamedream.svelte';
 	import BrandText from '../BrandText.svelte';
 	import { chickenDinner } from '../../stores/winner.svelte';
 
