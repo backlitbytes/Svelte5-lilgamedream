@@ -1,3 +1,5 @@
+Built with the Svelte 5 alpha.
+
 Can you find all the games that let you find all the games?
 
 Future things:
